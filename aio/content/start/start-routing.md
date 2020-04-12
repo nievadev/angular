@@ -27,7 +27,7 @@ The app is already set up to use the Angular Router and to use routing to naviga
     <code-example header="src/app/app.module.ts" path="getting-started/src/app/app.module.ts" region="product-details-route">
     </code-example>
 
-    A route associates one or more URL paths with a component.
+    A route associates one or more URL paths with a component. Note that `<router-outlet>` directive placed in `app.component.html` now will be filled dynamically with the according component's HTML based in the URL path we are in. For example, if we are in `/`, `<router-outlet>` directive will be filled with `ProductListComponent`'s HTML and so on.
 
 1. The directive configures the component template to define how the user navigates to the route or URL. When the user clicks a product name, the app  displays the details for that product.
 
